@@ -1,12 +1,20 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🌌 Underlowsky — Kazakh Portfolio
 
-## Expanding the ESLint configuration
+Мой персональный сайт-портфолио, созданный на **React + Vite**, где я делюсь своими проектами, идеями и творчеством.  
+Сайт доступен по адресу: 👉 [underlowsky.me](http://underlowsky.me)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Технологии
+- ⚛️ **React 18**
+- ⚡ **Vite** — быстрый сборщик проекта
+- 🎨 **CSS + Tailwind** (или твой кастомный стиль)
+- 🌍 **GitHub Pages** — хостинг и деплой
+- 📡 **Namecheap** — домен и DNS
+
+---
+
+## 📂 Структура проекта
