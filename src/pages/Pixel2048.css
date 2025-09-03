@@ -1,0 +1,93 @@
+.pixel-2048 {
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  text-align: center;
+  padding: 2rem 0;
+}
+.board {
+  display: inline-block;
+  background: #222;
+  border: 6px solid #fff;
+  box-shadow: 0 0 0 6px #222, 0 8px 0 0 #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.row {
+  display: flex;
+}
+.cell {
+  width: 56px;
+  height: 56px;
+  margin: 2px;
+  background: #333;
+  color: #ffd700;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 0 #111;
+  text-shadow: 2px 2px 0 #222, 0 0 8px #ffd700;
+}
+.cell-2 { background: #444; }
+.cell-4 { background: #555; }
+.cell-8 { background: #666; color: #ff0; }
+.cell-16 { background: #777; color: #ffb700; }
+.cell-32 { background: #888; color: #ffec70; }
+.cell-64 { background: #999; color: #fff200; }
+.cell-128 { background: #a67c52; color: #fff; }
+.cell-256 { background: #ffd700; color: #222; }
+.cell-512 { background: #ffec70; color: #222; }
+.cell-1024 { background: #ffb700; color: #222; }
+.cell-2048 { background: #ff0; color: #222; }
+.score {
+  font-size: 1.2rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 0 #222, 0 0 8px #ffd700;
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.gameover {
+  font-size: 1rem;
+  color: #fff;
+  background: #a00;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 2px 0 #333;
+  display: inline-block;
+}
+.gameover button {
+  font-family: inherit;
+  font-size: 1rem;
+  background: #ffd700;
+  color: #222;
+  border: 2px solid #222;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #333;
+  border-radius: 0;
+  margin-left: 1rem;
+}
+.achievement-toast {
+  margin-top: 1.5rem;
+  background: #ff0;
+  color: #222;
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  font-size: 0.9rem;
+  border: 2px solid #222;
+  box-shadow: 0 2px 0 #333;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  display: block;
+  animation: fade-in 0.3s;
+  white-space: pre-line;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

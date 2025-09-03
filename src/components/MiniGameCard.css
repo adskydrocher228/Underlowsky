@@ -1,0 +1,53 @@
+.minigame-card {
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  background: var(--pixel-card-bg, #222 8px);
+  border: 4px solid var(--pixel-frame, #fff);
+  box-shadow: 0 0 0 4px #000, 0 8px 0 0 #333;
+  padding: 1.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  max-width: 320px;
+  transition: box-shadow 0.2s;
+}
+.minigame-card:focus {
+  outline: 2px dashed #ff0;
+}
+.mg-media img {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  image-rendering: pixelated;
+  border: 2px solid #fff;
+  background: #111;
+}
+.mg-head h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: var(--pixel-accent, #ff0);
+}
+.mg-desc {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.mg-btn.play {
+  font-family: inherit;
+  font-size: 0.8rem;
+  background: #ff0;
+  color: #222;
+  border: 2px solid #222;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #333;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+.mg-btn.play:hover {
+  background: #fff200;
+}

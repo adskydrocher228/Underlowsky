@@ -1,0 +1,64 @@
+.pixel-flappy {
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  text-align: center;
+  padding: 2rem 0;
+}
+.flappy-area {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flappy-canvas {
+  background: #222;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px #000, 0 8px 0 0 #333;
+  image-rendering: pixelated;
+  width: 320px;
+  height: 480px;
+  max-width: 90vw;
+}
+.flappy-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  background: #0ff;
+  color: #222;
+  border: 2px solid #222;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #333;
+  border-radius: 0;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.flappy-btn:hover {
+  background: #00e6e6;
+}
+.flappy-final-score {
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  font-size: 1.2rem;
+  color: #ff0;
+  background: #222;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 0 #333;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.achievement-toast {
+  margin-top: 1rem;
+  background: #ff0;
+  color: #222;
+  font-family: var(--font-pixel, 'Press Start 2P', monospace);
+  font-size: 0.9rem;
+  border: 2px solid #222;
+  box-shadow: 0 2px 0 #333;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  display: inline-block;
+  animation: fade-in 0.3s;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

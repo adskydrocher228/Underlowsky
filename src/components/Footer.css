@@ -1,0 +1,26 @@
+/* Game styled footer HUD */
+.site-footer { padding: 36px 0 28px; background:
+	linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.2)),
+	repeating-linear-gradient(45deg,#e9dcc4 0 10px,#f3e8d3 10px 20px);
+	position: relative; overflow: hidden; margin-top: 40px; image-rendering: pixelated;
+	box-shadow: 0 0 0 4px #1d4547,0 0 0 8px #fff, 8px -8px 0 0 #1d4547;
+}
+.foot-inner { position:relative; z-index:2; display:flex; flex-direction:column; gap:18px; }
+.hud-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap:12px; }
+.hud-block { position:relative; background: var(--bg-alt); padding:10px 8px 8px; min-height:62px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 0 0 3px #1d4547,0 0 0 6px #fff, 4px 4px 0 #1d4547; font-family:'Press Start 2P', monospace; }
+.hud-block .label { font-size:0.48rem; letter-spacing:2px; color:var(--text); text-shadow:0 0 0 #1d4547,0 2px 0 #1d4547; }
+.hud-block .value { font-size:0.48rem; letter-spacing:1px; margin-top:4px; }
+.footer-fine { margin:0; text-align:center; font-size:0.48rem; letter-spacing:2px; text-transform:uppercase; opacity:0.75; }
+.footer-legal-links { display: flex; gap: 12px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
+.footer-btn-link { display: inline-block; font-family: 'Press Start 2P', monospace; font-size: 0.48rem; background: var(--brand); color: #fff; padding: 7px 12px 5px; border-radius: 8px; text-decoration: none; box-shadow: 0 0 0 3px #1d4547,0 0 0 6px #fff, 4px 4px 0 #1d4547; letter-spacing: 2px; transition: background 0.2s, transform 0.2s; }
+.footer-btn-link:hover { background: var(--accent-warm); color: #1d4547; transform: translate(-2px,-2px); box-shadow: 0 0 0 3px #1d4547,0 0 0 6px #fff, 4px 4px 0 #1d4547; }
+@media (max-width: 700px) {
+  .site-footer { padding: 18px 0 12px; margin-top: 24px; }
+  .foot-inner { gap: 10px; }
+  .hud-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .hud-block { min-height: 38px; padding: 6px 4px 4px; font-size: 0.42rem; }
+  .hud-block .label, .hud-block .value { font-size: 0.42rem; }
+  .footer-fine { font-size: 0.42rem; }
+  .footer-legal-links { gap: 6px; margin-top: 8px; }
+  .footer-btn-link { font-size: 0.42rem; padding: 6px 8px 4px; }
+}

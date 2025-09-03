@@ -1,0 +1,14 @@
+.philosophy { position:relative; }
+.philosophy-inner { max-width: 860px; }
+.abaquote { font-size:0.7rem; letter-spacing:1.5px; line-height:1.6; background:var(--bg-alt); padding:20px 22px 18px; margin:0 0 34px; box-shadow:0 0 0 3px #1d4547,0 0 0 6px #fff,6px 6px 0 #1d4547; position:relative; image-rendering:pixelated; }
+.abaquote span { color: var(--brand); }
+.abaquote::after { content:"✦"; position:absolute; top:-14px; left:-14px; background:var(--accent-warm); color:#1d2a2a; padding:8px 10px 6px; font-size:0.55rem; box-shadow:0 0 0 3px #1d4547,0 0 0 6px #fff; }
+.philosophy p { font-size:0.6rem; line-height:1.75; letter-spacing:1px; margin:0 0 22px; }
+.philosophy p.intro { font-size:0.62rem; }
+.philosophy p.line { font-style:italic; color:var(--brand); }
+.principles { list-style:none; margin:0 0 28px; padding:0; display:grid; gap:10px; }
+.principles li { background:var(--bg-alt); padding:14px 16px 12px; font-size:0.58rem; letter-spacing:1px; box-shadow:0 0 0 3px #1d4547,0 0 0 6px #fff; display:flex; gap:8px; align-items:center; }
+.principles li span { color:var(--accent-warm); font-weight:600; }
+:root[data-theme='night'] .abaquote { background:#173840; }
+:root[data-theme='night'] .principles li { background:#173840; }
+@media (max-width:680px){ .abaquote { font-size:0.62rem; } .philosophy p { font-size:0.55rem; } }
